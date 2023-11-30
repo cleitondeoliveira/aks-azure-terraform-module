@@ -76,7 +76,7 @@ resource "azurerm_kubernetes_cluster_node_pool" "node_pools" {
   kubernetes_cluster_id = azurerm_kubernetes_cluster.this.id
   vm_size               = each.value.vm_size
   zones                 = ["1", "2", "3"]
-  max_pods              = 250
+  max_pods              = 200
   os_type               = "Linux"
   mode                  = "User"
   enable_auto_scaling   = each.value.enable_auto_scaling
