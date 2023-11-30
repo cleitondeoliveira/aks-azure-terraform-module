@@ -1,3 +1,5 @@
+#improve your varibles 
+
 variable "location" {
   description = "The Azure region into which the cluster should be deployed"
   default     = "East US"
